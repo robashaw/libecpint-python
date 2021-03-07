@@ -48,6 +48,7 @@ class CMakeBuild(build_ext):
             "-DPYTHON_EXECUTABLE={}".format(sys.executable),
             "-DPYECPINT_VERSION_INFO={}".format(self.distribution.get_version()),
             "-DCMAKE_BUILD_TYPE={}".format(cfg),  # not used on MSVC, but no harm
+            "-DLIBECPINT_BUILD_TESTS=OFF", # turn off tests
         ]
         build_args = []
 
