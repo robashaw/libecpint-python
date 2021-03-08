@@ -49,6 +49,7 @@ class CMakeBuild(build_ext):
             "-DPYECPINT_VERSION_INFO={}".format(self.distribution.get_version()),
             "-DCMAKE_BUILD_TYPE={}".format(cfg),  # not used on MSVC, but no harm
             "-DLIBECPINT_BUILD_TESTS=OFF", # turn off tests
+            "-DLIBECPINT_BUILD_DOCS=OFF", # turn off libecpint C++ docs
         ]
         build_args = []
 
