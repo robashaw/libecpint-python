@@ -115,4 +115,5 @@ setup(
     ext_modules=[CMakeExtension("pyecpint")],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
+    install_requires=['numpy'],
 )
