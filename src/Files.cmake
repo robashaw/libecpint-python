@@ -2,6 +2,7 @@ set(PYECPINT_CPPS
   ${PROJECT_SOURCE_DIR}/src/main.cpp
   ${PROJECT_SOURCE_DIR}/src/docstrings.cpp
   ${PROJECT_SOURCE_DIR}/src/gshell.cpp
+  ${PROJECT_SOURCE_DIR}/src/ecp.cpp
   ${PROJECT_SOURCE_DIR}/src/api.cpp
 )
 

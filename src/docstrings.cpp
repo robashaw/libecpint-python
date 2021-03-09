@@ -8,7 +8,6 @@ namespace docstrings {
 			if (str != mod->second.end())
 				return str->second.c_str();
 		}
-		std::cout << std::endl;
 		return default_string.c_str();
 	}
 }
